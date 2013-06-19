@@ -5,7 +5,9 @@
 using namespace std;
 
 struct etc {
+
 	int node,level;
+
 }eulerv[nmax*10];
 
 vector<int> list[nmax];
