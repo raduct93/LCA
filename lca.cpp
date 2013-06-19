@@ -4,16 +4,18 @@
 #define min(a,b) (a)<=(b)?(a):(b)
 using namespace std;
 
-struct etc{
+struct etc {
+
 	int node,level;
+
 }eulerv[nmax*10];
 
 vector<int> list[nmax];
 int log[1000010];
 int mat[1000010][26];
 
-int father[nmax],k,n,dist[nmax],poz[nmax];
-void rmq(){
+int father[nmax], k, n, dist[nmax], poz[nmax];
+void rmq() {
 	int i,j,p;
 	for(i=0;i<=k;++i)
 		mat[i][0]=i;
